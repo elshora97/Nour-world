@@ -27,7 +27,10 @@ export function ColorsGame({ onHome }: ColorsGameProps) {
       )}
       renderChoice={(color, props) => (
         <QuizChoice label={color.name} {...props}>
-          <ColorObject shape={color.shape} fill={color.hex} edge={color.edge} />
+          {/* Balloons float gently (CSS-only, cheap), each out of step with the others. */}
+          <span className="anim-bob block h-full w-full" style={{ animationDelay: `${props.index * -0.8}s` }}>
+            <ColorObject shape={color.shape} fill={color.hex} edge={color.edge} />
+          </span>
         </QuizChoice>
       )}
     />

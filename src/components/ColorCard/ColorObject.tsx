@@ -23,9 +23,20 @@ function Body({ shape, fill, edge }: ColorObjectProps) {
     case 'balloon':
       return (
         <>
-          <path d="M50 80 Q 46 90 52 97" fill="none" stroke={edge} strokeWidth="2" />
-          <path d="M45 82 L55 82 L50 76 Z" {...common} />
-          <ellipse cx="50" cy="42" rx="32" ry="37" {...common} />
+          {/* curly string */}
+          <path
+            d="M50 84 C 44 88 56 92 50 96 C 46 99 52 101 50 104"
+            fill="none"
+            stroke="#8a7fa6"
+            strokeWidth="1.8"
+            strokeLinecap="round"
+          />
+          {/* knot */}
+          <path d="M46 85 L54 85 L50 78 Z" {...common} />
+          {/* balloon body: round top, gently pointed bottom */}
+          <path d="M50 4 C 77 4 88 25 88 42 C 88 62 68 77 50 80 C 32 77 12 62 12 42 C 12 25 23 4 50 4 Z" {...common} />
+          {/* soft shading on the lower side for a 3D look */}
+          <path d="M20 52 C 26 68 40 76 50 77 C 38 72 28 64 20 52 Z" fill={edge} opacity="0.25" />
         </>
       );
     case 'star':
