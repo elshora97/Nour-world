@@ -1,4 +1,5 @@
 import { registerSW } from 'virtual:pwa-register';
+import { listenForInstallPrompt } from './install';
 
 /** Must match the audio runtime cache name in vite.config.ts. */
 const AUDIO_CACHE = 'nour-audio';
@@ -28,6 +29,7 @@ async function warmAudioCache() {
 }
 
 export function setupPwa() {
+  listenForInstallPrompt();
   if (!('serviceWorker' in navigator)) return;
   registerSW({
     immediate: true,

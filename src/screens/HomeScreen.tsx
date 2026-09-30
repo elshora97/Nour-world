@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { useRef, useState } from 'react';
 import { Mascot } from '../components/Character/Mascot';
 import { GameCard } from '../components/GameCard/GameCard';
+import { InstallButton } from '../components/InstallButton/InstallButton';
 import { SkyScene } from '../components/Scene/SkyScene';
 import { categories, type CategoryId, type GameCategory } from '../data/categories';
 import { helloLine } from '../data/feedback';
@@ -48,6 +49,10 @@ export function HomeScreen({ isAvailable, onOpenGame }: HomeScreenProps) {
   return (
     <main className="relative flex h-dvh w-full flex-col items-center overflow-hidden">
       <SkyScene />
+
+      <div className="absolute left-[2vw] top-[3vh] z-20">
+        <InstallButton />
+      </div>
 
       <motion.h1
         className="relative z-10 mt-[4vh] flex items-center gap-[1.5vh] font-display text-[9vh] font-extrabold leading-tight text-white"
