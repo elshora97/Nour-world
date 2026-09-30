@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Baloo Bhaijaan 2", "Cairo", system-ui, sans-serif;
+  --font-body: "Cairo", system-ui, sans-serif;
+
+  --color-sky-top: #8fd8ff;
+  --color-sky-bottom: #fff4fb;
+  --color-grass: #9be7b5;
+  --color-grass-dark: #6fd39a;
+  --color-coral: #ff7a85;
+  --color-sun: #ffd23f;
+  --color-berry: #ff6fb5;
+  --color-grape: #9b7bff;
+  --color-mint: #5fe0b8;
+  --color-ocean: #4cb8ff;
+  --color-tangerine: #ffa24c;
+  --color-ink: #3b2a5a;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-ink);
+  background: var(--color-sky-bottom);
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  touch-action: manipulation;
+}
+
+:focus-visible {
+  outline: 5px solid var(--color-grape);
+  outline-offset: 4px;
+}
+
+/* Ambient decoration: CSS-only, transform/opacity only (compositor-friendly). */
+@keyframes drift {
+  from { transform: translate3d(-20vw, 0, 0); }
+  to { transform: translate3d(120vw, 0, 0); }
+}
+@keyframes twinkle {
+  0%, 100% { transform: scale(0.8); opacity: 0.5; }
+  50% { transform: scale(1.1); opacity: 1; }
+}
+@keyframes flutter {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  50% { transform: translate3d(8vw, -3vh, 0); }
+}
+@keyframes bob {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  50% { transform: translate3d(0, -6px, 0); }
+}
+
+.anim-drift { animation: drift 70s linear infinite; will-change: transform; }
+.anim-twinkle { animation: twinkle 3s ease-in-out infinite; }
+.anim-flutter { animation: flutter 8s ease-in-out infinite; }
+.anim-bob { animation: bob 2.4s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .anim-drift, .anim-twinkle, .anim-flutter, .anim-bob { animation: none; }
+}

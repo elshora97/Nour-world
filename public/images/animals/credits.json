@@ -1,0 +1,72 @@
+{
+ "cat": {
+  "title": "Animal Face",
+  "creator": "Travel Photographer",
+  "license": "cc0",
+  "source": "stocksnap",
+  "foreign_landing_url": "https://stocksnap.io/photo/animal-face-PP1NWE5XWK"
+ },
+ "dog": {
+  "title": "Dog Puppy",
+  "creator": "Jairo Alzate",
+  "license": "cc0",
+  "source": "stocksnap",
+  "foreign_landing_url": "https://stocksnap.io/photo/dog-puppy-19KEJ58BB9"
+ },
+ "lion": {
+  "title": "Male lion portrait, carnivore wildlife",
+  "creator": null,
+  "license": "cc0",
+  "source": "rawpixel",
+  "foreign_landing_url": "https://www.rawpixel.com/image/11189395/male-lion-portrait-carnivore-wildlife"
+ },
+ "elephant": {
+  "title": "Free African elephant image",
+  "creator": null,
+  "license": "cc0",
+  "source": "rawpixel",
+  "foreign_landing_url": "https://www.rawpixel.com/image/5904012/photo-image-public-domain-nature-family"
+ },
+ "rabbit": {
+  "title": "beautiful portrait of bunny rabbit,elegant,intricate,animal,digital painting,realistic,hyper realistic,4k,ultra detailed,artstation",
+  "creator": "chris-hayes",
+  "license": "pdm",
+  "source": "flickr",
+  "foreign_landing_url": "https://www.flickr.com/photos/162244249@N03/52318850693"
+ },
+ "duck": {
+  "title": "Mallard duckling!",
+  "creator": "Nina_Ali",
+  "license": "cc0",
+  "source": "flickr",
+  "foreign_landing_url": "https://www.flickr.com/photos/51240706@N07/48191925761"
+ },
+ "horse": {
+  "title": "Horse Portrait",
+  "creator": "Matt Bango",
+  "license": "cc0",
+  "source": "stocksnap",
+  "foreign_landing_url": "https://stocksnap.io/photo/horse-portrait-DPZROCOI17"
+ },
+ "cow": {
+  "title": "Red cow's face closeup, livestock",
+  "creator": null,
+  "license": "cc0",
+  "source": "rawpixel",
+  "foreign_landing_url": "https://www.rawpixel.com/image/6041393/photo-image-face-public-domain-nature"
+ },
+ "sheep": {
+  "title": "Lamb",
+  "creator": "JOHN K THORNE",
+  "license": "cc0",
+  "source": "flickr",
+  "foreign_landing_url": "https://www.flickr.com/photos/89918055@N05/52182799208"
+ },
+ "chicken": {
+  "title": "hen chicken reddish-brown feathers",
+  "creator": null,
+  "license": "cc0",
+  "source": "rawpixel",
+  "foreign_landing_url": "https://www.rawpixel.com/image/3295934/free-photo-image-animal-beak-bird"
+ }
+}
