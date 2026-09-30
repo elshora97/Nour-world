@@ -1,5 +1,6 @@
 import { AnimatePresence, MotionConfig, motion } from 'framer-motion';
 import { useState } from 'react';
+import { LandscapeGuard } from '../components/LandscapeGuard/LandscapeGuard';
 import type { CategoryId } from '../data/categories';
 import { AlphabetGame } from '../games/alphabet/AlphabetGame';
 import { AnimalsGame } from '../games/animals/AnimalsGame';
@@ -17,6 +18,7 @@ export function App() {
 
   return (
     <MotionConfig reducedMotion="user">
+      <LandscapeGuard>
       <AnimatePresence mode="wait">
         <motion.div
           key={screen}
@@ -37,6 +39,7 @@ export function App() {
           )}
         </motion.div>
       </AnimatePresence>
+      </LandscapeGuard>
     </MotionConfig>
   );
 }
