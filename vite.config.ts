@@ -38,6 +38,10 @@ export default defineConfig({
         // audio needs HTTP range support (iOS Safari), so it lives in a runtime
         // cache that src/lib/pwa.ts fills in the background after install.
         globPatterns: ['**/*.{js,css,html,png,webp,svg,json}'],
+        // Activate a new version as soon as it's downloaded instead of waiting
+        // for every tab/app window to close, so updates actually reach Nour.
+        skipWaiting: true,
+        clientsClaim: true,
         navigateFallback: '/index.html',
         runtimeCaching: [
           {
